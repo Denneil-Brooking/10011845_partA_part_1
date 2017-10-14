@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Staff Login</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+        <div class="header">
+                Welcome to Rotovegas Airways staff login
+        </div>
+        <div class="logo">
+                <img src="images\setlogo.png" width="110px" height="110px">
+        </div>
+        <!--A form to help users input required data-->
+        <form name="login" method="post" onsubmit="return submit()">
+                <div class="login">
+                        <p>Username <br><input type="text" id="user" placeholder="atless 8 characters" onkeyup="ValidateUsername();"
+                                        pattern="[A-Za-z0-9]{8,}" /></p>
+
+                        <p>Password <br><input type="password" id="pass1" placeholder="atless 6 character" onkeyup="ValidatePassword();"
+                                        pattern="[A-Za-z0-9]{6,}" /></p>
+
+                        <p>Confirm Password <br><input type="password" id="pass2" placeholder="must match above" onkeyup="ValidatePassword();"
+                                        pattern="[A-Za-z0-9]{6,}" /></p>
+
+                        <div class="button">
+                                <input type="submit" id="submit" value="Login ">
+                        </div>
+
+                        <!--Hidden classes to inform users of requirments when hovered over-->
+                        <div class="hidden">
+                                <a>Username should have atless 8 character. [A-Z][a-z][0-9]</a>
+                        </div>
+
+                        <div class="hidden1">
+                                <a>Password should have atless 6 character. [A-Z][a-z][0-9]</a>
+                        </div>
+
+                        <div class="hidden2">
+                                <a>Confirm password should have atless 6 character & match your first password. [A-Z][a-z][0-9]</a>
+                        </div>
+
+
+                        <!--Notice/Message classes to check & inform users if data meets requirments & is accepted or not.-->
+                        <div class="ValidateUsername">
+                                <span id="uNotice"></span>
+                        </div>
+
+                        <div class="ValidatePassword">
+                                <span id="pNotice"></span>
+                        </div>
+
+                        <div class="box">
+                                Message: <span id="message"></span><br>
+                        </div>
+
+                </div>
+        </form>
+
+        <div class="footer" Style="color:#FFFFFF">Copyright © 2017 &nbsp;&nbsp; Denneil Brooking (#10011845) &nbsp;&nbsp;&nbsp;<a>COMP5202 PartA_Part_1</a>&nbsp;&nbsp;&nbsp;
+                <a href="http://www.huffingtonpost.com/the-editors-of-live-and-invest-overseas/understanding-airlines-lo_b_9239104.html">Background Image from huffingtonpost</a>&nbsp;&nbsp;&nbsp;
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

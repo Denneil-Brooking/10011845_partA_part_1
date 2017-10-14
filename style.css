@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    background-image: url("images/background.jpg");
+    background-attachment: fixed;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    align-content: center;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.logo {
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    width: 330px;
+    height: 80px;
+    top: 0;
+}
+
+.hidden {
+    position: fixed;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    height: 30px;
+    width: 680px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    top: 110px;
+}
+
+.hidden1 {
+    position: fixed;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    height: 30px;
+    width: 680px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    top: 190px;
+}
+
+.hidden2 {
+    position: fixed;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    height: 30px;
+    width: 910px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    top: 270px;
+}
+
+.hidden1:hover {
+    opacity: 1;
+    border: 1px solid #FF0000;
+    background-color: rgba(0, 0, 0, 0.48);
+}
+
+.hidden:hover {
+    opacity: 1;
+    border: 1px solid #FF0000;
+    background-color: rgba(0, 0, 0, 0.48);
+}
+
+.hidden2:hover {
+    opacity: 1;
+    border: 1px solid #FF0000;
+    background-color: rgba(0, 0, 0, 0.48);
+}
+
+.box {
+    position: absolute;
+    text-align: left;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 17px;
+    left: 50px;
+    border: 2px solid #000000;
+    background-color: rgba(255, 255, 255, 0.46);
+    width: 330px;
+    height: 40px;
+    top: 470px;
+    padding-top: 10px;
+}
+
+.login {
+    align-content: center;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    left: 50px;
+    padding-top: 2px;
+    border: 2px solid #000000;
+    background-color: rgba(236, 153, 58, 0);
+    width: 330px;
+    height: 380px;
+}
+
+.login [type=submit] {
+    color: #000000;
+    font-family: 'Kaushan Script', cursive;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.button :hover {
+    color: #000000;
+    font-family: 'Kaushan Script', cursive;
+    background-color: #8AF1FF;
+    border: 1px solid #282163;
+}
+
+.passcheck {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15px;
+}
+
+.usercheck {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15px;
+}
+
+.footer {
+    text-align: left;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15px;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border: 1px solid #000000;
+    background-color: rgba(0, 0, 0, 0.48);
+}
